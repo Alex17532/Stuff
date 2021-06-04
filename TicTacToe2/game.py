@@ -38,7 +38,7 @@ def available_square(row, col):
 def is_board_full():
     for row in range(BOARD_ROWS):
         for col in range(BOARD_COLS):
-            
+            if 
 
 print(available_square(1, 1))
 mark_square(1, 1, 2)
