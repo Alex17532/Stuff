@@ -127,6 +127,7 @@ class Missile(Sprite):
             self.dy = math.sin(math.radians(self.heading)) * 1
 
 # Create sprites list
+# an empty list 
 sprites = []
 
 # Create instances
