@@ -9,8 +9,10 @@ pen.speed(0)
 pen.shape("square")
 pen.color("#66ffff")
 
+def follow_cursor(x, y):
+    pen.goto(x, y)
+
 while True:
-    pen.forward(10)
-    pen.seth(random.randint(1, 360))
+    
 
 wn.mainloop()
