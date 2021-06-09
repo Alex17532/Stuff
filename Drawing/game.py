@@ -1,6 +1,6 @@
 import turtle, random
 
-wn_names = [". dRaWiNg GaMe •", "• DrAwInG gAmE ."]
+wn_names = [". dRaWiNg GaMe °", "° DrAwInG gAmE ."]
 
 wn = turtle.Screen()
 wn.title("Drawing game")
