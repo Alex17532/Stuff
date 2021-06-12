@@ -20,10 +20,14 @@ def draw_square():
         pen.forward(100)
         pen.right(90)
 
+def clear_drawing():
+    pen.clear()
+
 
 
 wn.listen()
 wn.onkeypress(draw_square, "q")
+wn.onkeypress(clear_drawing, "c")
 
 wn.onclick(draw)
 
