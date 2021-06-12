@@ -1,6 +1,6 @@
 import turtle, random
 
-wn_names = [". dRaWiNg GaMe *", "* DrAwInG gAmE ."]
+wn_names = [". dRaWiNg GaMe °", "° DrAwInG gAmE ."]
 colours = ["yellow", "gold", "orange", "red", "maroon", "violet", "magenta", "purple", "navy", "blue", "skyblue", "cyan", 'turquoise', 'lightgreen', 'green', 'darkgreen', 'chocolate', 'brown', 'gray', 'white']
 
 wn = turtle.Screen()
