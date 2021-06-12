@@ -13,7 +13,15 @@ pen.shape("square")
 pen.color("#66ffff")
 
 def draw(x, y):
-    pen.goto(x, y) 
+    pen.goto(x, y)
+
+def draw_sqare():
+    for i in range(4):
+        pen.forward(10)
+        pen.right(90)
+
+wn.listen()
+wn.onkeypress(draw_sqare, "q")
 
 wn.onclick(draw)
 
