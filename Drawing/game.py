@@ -12,10 +12,10 @@ pen.speed(0)
 pen.shape("square")
 pen.color("#66ffff")
 
-def follow_cursor(x, y):
-    pen.goto(x, y)
+def draw(x, y):
+    pen.goto(x, y) 
 
-wn.onclick(follow_cursor)
+wn.onclick(draw)
 
 
 while True:
