@@ -13,7 +13,7 @@ wn.bgcolor("black")
 pen = turtle.Turtle()
 pen.speed(0)
 pen.shape("square")
-pen.color("#66ffff")
+pen.color(random.choice(colours))
 
 def draw(x, y):
     pen.goto(x, y)
