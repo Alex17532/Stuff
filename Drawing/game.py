@@ -25,7 +25,7 @@ wn.onkeypress(draw_shape, "q")
 
 wn.onclick(draw)
 
-#sshd-keygen-wrapper
+
 while True:
     draw_shape()
     pen.color(random.choice(colours))
