@@ -17,7 +17,7 @@ def draw(x, y):
 
 def draw_sqare():
     for i in range(4):
-        pen.forward(10)
+        pen.forward(100)
         pen.right(90)
 
 wn.listen()
