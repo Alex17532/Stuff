@@ -15,18 +15,19 @@ pen.color("#66ffff")
 def draw(x, y):
     pen.goto(x, y)
 
-def draw_sqare():
+def draw_shape():
     for i in range(4):
         pen.forward(100)
         pen.right(90)
 
 wn.listen()
-wn.onkeypress(draw_sqare, "q")
+wn.onkeypress(draw_shape, "q")
 
 wn.onclick(draw)
 
 
 while True:
+    draw_shape()
     pen.color(random.choice(colours))
     pen.seth(random.randint(0, 360))
     wn.title(random.choice(wn_names))
