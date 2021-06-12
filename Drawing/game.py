@@ -29,7 +29,7 @@ wn.onclick(draw)
 
 
 while True:
-    draw_square()
+    # draw_square()
     pen.color(random.choice(colours))
     pen.seth(random.randint(0, 360))
     wn.title(random.choice(wn_names))
