@@ -32,7 +32,6 @@ def clear_drawing():
     pen.clear()
 
 
-
 wn.listen()
 wn.onkeypress(draw_square, "s")
 wn.onkeypress(clear_drawing, "c")
