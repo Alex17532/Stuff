@@ -3,7 +3,7 @@ import turtle, random
 
 running = True
 
-wn_name = ["Drawing Game"]
+wn_name = ["Drawing Game -–—–- Spin Speed Maxed Out"]
 colours = ["red", "orange", "yellow", "green", "blue", "magenta", "violet"]
 colours2 = ["red", "orange", "yellow"]
 shapes = ["square", "arrow", "circle", "turtle", "triangle", "classic"]
@@ -17,7 +17,6 @@ class Main():
         self.t.shapesize(stretch_wid=1, stretch_len=1, outline=5)
         self.x = 300
         self.y = 300
-        self.t.pu()
         self.t.speed(0)
         wn.bgcolor("black")
         wn.title(random.choice(wn_name))
@@ -30,7 +29,9 @@ class Main():
         self.y = event.y
     def run(self):
         while True:
-            self.t.left(60)
+            self.t.left(540540540540540)
+            self.t.home()
+            self.t.forward(190)
             def func(event):
                 print(event.x, event.y)
                 pen.goto(event.x, event.y)
