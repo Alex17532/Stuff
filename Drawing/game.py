@@ -1,13 +1,10 @@
 import numpy
 import turtle, random
-
 running = True
-
-wn_name = ["Drawing Game -–—–- Spin Speed Maxed Out"]
+wn_name = ["Drawing Game - Spin Speed Maxed Out"]
 colours = ["red", "orange", "yellow", "green", "blue", "magenta", "violet"]
 colours2 = ["red", "orange", "yellow"]
 shapes = ["square", "arrow", "circle", "turtle", "triangle", "classic"]
-
 class Main():
     def __init__(self):
         wn = turtle.Screen()
@@ -22,7 +19,6 @@ class Main():
         wn.title(random.choice(wn_name))
         screen.bind('<Motion>', self.set_coords)
         self.run()
-        
     def set_coords(self, event):
         print("X:", event.x, "Y:", event.y)
         self.x = event.x
