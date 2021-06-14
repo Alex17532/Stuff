@@ -26,8 +26,9 @@ class Main():
     def run(self):
         while True:
             self.t.left(540540540540540)
-            self.t.home()
-            self.t.forward(190)
+            # self.t.home()
+            # self.t.forward(190)
+            self.t.circle(10)
             def func(event):
                 print(event.x, event.y)
                 pen.goto(event.x, event.y)
