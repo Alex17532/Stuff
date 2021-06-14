@@ -1,8 +1,8 @@
 import numpy
 import turtle, random
 running = True
-wn_name = ["Drawing Game - Spin Speed Maxed Out"]
-colours = ["red", "orange", "yellow", "green", "blue", "magenta", "violet"]
+wn_name = ["Drawing Game"]
+colours = ["green", "blue", "magenta", "violet"]
 colours2 = ["red", "orange", "yellow"]
 shapes = ["square", "arrow", "circle", "turtle", "triangle", "classic"]
 class Main():
@@ -16,7 +16,12 @@ class Main():
         self.y = 300
         self.t.speed(0)
         wn.bgcolor("black")
+        def change_background():
+            wn.listen()
+            wn.bgcolor(random.choice(colours))
+        change_background()
         wn.title(random.choice(wn_name))
+        wn.onkeypress(change_background, "c")
         screen.bind('<Motion>', self.set_coords)
         self.run()
     def set_coords(self, event):
