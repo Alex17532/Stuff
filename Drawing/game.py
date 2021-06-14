@@ -13,6 +13,7 @@ class Main():
         wn.setup(600, 600)
         screen = wn.getcanvas()
         self.t = turtle.Turtle()
+        self.t.shapesize(stretch_wid=1, stretch_len=1.5, outline=None)
         self.x = 300
         self.y = 300
         self.t.speed(0)
@@ -26,11 +27,11 @@ class Main():
         self.y = event.y
     def run(self):
         while True:
+            self.t.left(90)
             def func(event):
                 print(event.x, event.y)
                 pen.goto(event.x, event.y)
-            self.t.seth(random.randint(1, 360))
-            self.t.shape(random.choice(shapes))
+            self.t.shape("triangle")
             self.t.color(random.choice(colours))
             self.t.setposition(self.x-300, (self.y*-1)+300)
 m = Main()
