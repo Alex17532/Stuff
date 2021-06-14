@@ -25,7 +25,7 @@ class Main():
         screen.bind('<Motion>', self.set_coords)
         self.run()
     def set_coords(self, event):
-        print("X:", event.x, "Y:", event.y)
+        print("X: [", event.x, "] Y:[", event.y, "]")
         self.x = event.x
         self.y = event.y
     def run(self):
@@ -34,6 +34,7 @@ class Main():
             self.t.circle(10)
             self.t.home()
             self.t.forward(190)
+            self.t.shape(random.choice(shapes))
             def func(event):
                 print(event.x, event.y)
                 pen.goto(event.x, event.y)
