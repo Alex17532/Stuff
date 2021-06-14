@@ -17,11 +17,13 @@ class Main():
         self.t.shapesize(stretch_wid=1, stretch_len=1, outline=5)
         self.x = 300
         self.y = 300
+        self.t.pu()
         self.t.speed(0)
         wn.bgcolor("black")
         wn.title(random.choice(wn_name))
         screen.bind('<Motion>', self.set_coords)
         self.run()
+        
     def set_coords(self, event):
         print("X:", event.x, "Y:", event.y)
         self.x = event.x
