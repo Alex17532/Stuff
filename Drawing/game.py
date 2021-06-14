@@ -13,7 +13,7 @@ class Main():
         wn.setup(600, 600)
         screen = wn.getcanvas()
         self.t = turtle.Turtle()
-        self.t.shapesize(stretch_wid=1, stretch_len=1.5, outline=None)
+        self.t.shapesize(stretch_wid=1, stretch_len=1, outline=5)
         self.x = 300
         self.y = 300
         self.t.speed(0)
