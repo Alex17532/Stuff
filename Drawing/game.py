@@ -23,7 +23,7 @@ class Main():
         screen.bind('<Motion>', self.set_coords)
         self.run()
     def set_coords(self, event):
-        print(event.x, event.y)
+        print("X:", event.x, "Y:", event.y)
         self.x = event.x
         self.y = event.y
     def run(self):
