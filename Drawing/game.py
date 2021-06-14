@@ -3,7 +3,7 @@ import turtle, random
 
 running = True
 
-wn_name = ["{Drawing Game}"]
+wn_name = ["}Drawing Game{"]
 colours = ["yellow", "gold", "orange", "red", "maroon", "violet", "magenta", "purple", "navy", "blue", "skyblue", "cyan", 'turquoise', 'lightgreen', 'green', 'darkgreen', 'chocolate', 'brown', 'gray', 'white']
 shapes = ["square", "arrow", "circle", "turtle", "triangle", "classic"]
 
