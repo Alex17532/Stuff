@@ -119,6 +119,6 @@ while True:
 
     # Check for a loser
     if len(wrong_letters) == 5:
-        print("You lose!")
+        print("You lose! Rip.")
         print(f"The word was {word}")
         exit()
