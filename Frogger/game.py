@@ -6,7 +6,7 @@ import random
 # Set up the screen
 wn = turtle.Screen()
 wn.cv._rootwindow.resizable(False, False)
-wn.title("frogger")
+wn.title("Frogger")
 wn.setup(600, 800)
 wn.bgcolor("green")
 wn.bgpic("/Users/alexanderlongfellow/Desktop/Stuff/Frogger/background.gif")
