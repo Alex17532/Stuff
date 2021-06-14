@@ -5,7 +5,7 @@ running = True
 
 wn_name = ["Drawing Game"]
 colours = ["red", "orange", "yellow", "green", "blue", "magenta", "violet"]
-# colours2 = ["red", "green", "blue"]
+colours2 = ["red", "orange", "yellow"]
 shapes = ["square", "arrow", "circle", "turtle", "triangle", "classic"]
 
 class Main():
@@ -34,6 +34,6 @@ class Main():
                 pen.goto(event.x, event.y)
             self.t.pensize(5)
             self.t.shape("triangle")
-            self.t.color(random.choice(colours))
+            self.t.color(random.choice(colours2))
             self.t.setposition(self.x-300, (self.y*-1)+300)
 m = Main()
