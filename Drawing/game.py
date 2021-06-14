@@ -3,7 +3,7 @@ import turtle, random
 
 running = True
 
-wn_name = ["}Drawing Game{"]
+wn_name = ["Drawing Game"]
 colours = ["yellow", "gold", "orange", "red", "maroon", "violet", "magenta", "purple", "navy", "blue", "skyblue", "cyan", 'turquoise', 'lightgreen', 'green', 'darkgreen', 'chocolate', 'brown', 'gray', 'white']
 shapes = ["square", "arrow", "circle", "turtle", "triangle", "classic"]
 
@@ -17,7 +17,7 @@ class Main():
         self.y = 300
         self.t.speed(0)
         wn.bgcolor("black")
-        wn.title(wn_name)
+        wn.title(random.choice(wn_name))
         screen.bind('<Motion>', self.set_coords)
         self.run()
     def set_coords(self, event):
