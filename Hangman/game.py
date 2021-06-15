@@ -4,7 +4,7 @@ import random
 
 # Initialize 
 
-words = ["SYNTAX", "PYTHON", "HTML", "JAVASCRIPT"]
+words = ["SYNTAX", "PYTHON", "HTML", "JAVASCRIPT", "PROGRAM", "ERROR"]
 
 word = random.choice(words)
 guess = "-" * len(word)
