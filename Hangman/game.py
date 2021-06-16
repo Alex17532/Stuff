@@ -2,6 +2,13 @@ import os
 os.system("clear")
 import random
 
+run = input("Start program? (Y/N) > ")
+
+if run == "y".upper():
+    pass
+
+if run == "n".upper():
+    
 # Initialize 
 
 words = ["SYNTAX", "PYTHON", "HTML", "JAVASCRIPT", "PROGRAM", "ERROR"]

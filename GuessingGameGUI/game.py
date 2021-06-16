@@ -7,6 +7,7 @@ root = tkinter.Tk()
 root.title("Guessing Game")
 root.configure(bg="grey")
 
+
 def check():
     user_guess = int(txt_guess.get())
     if user_guess < computer_guess:
