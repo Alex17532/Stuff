@@ -4,11 +4,11 @@ import random
 
 run = input("Start program? (Y/N) > ")
 
+if run == "n".upper():
+    exit()
+
 if run == "y".upper():
     pass
-
-if run == "n".upper():
-    
 # Initialize 
 
 words = ["SYNTAX", "PYTHON", "HTML", "JAVASCRIPT", "PROGRAM", "ERROR"]
@@ -129,3 +129,6 @@ while True:
         print("You lose! Rip.")
         print(f"The word was {word}")
         exit()
+
+if run == "n".upper():
+    exit()
