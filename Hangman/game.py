@@ -9,6 +9,7 @@ if run == "n".upper():
 
 if run == "y".upper():
     pass
+
 # Initialize 
 
 words = ["SYNTAX", "PYTHON", "HTML", "JAVASCRIPT", "PROGRAM", "ERROR"]
