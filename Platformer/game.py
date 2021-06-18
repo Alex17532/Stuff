@@ -51,7 +51,7 @@ class Player(Sprite):
         Sprite.__init__(self, x, y, width, height)
         self.color=GREEN
     
-    def move(self): 
+    def move(self):
         self.x += self.dx
         self.y += self.dy
         self.dy += GRAVITY
