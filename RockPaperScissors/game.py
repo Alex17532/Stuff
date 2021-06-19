@@ -6,6 +6,7 @@ root.title("Rock, Paper, Scissors!")
 root.geometry("400x500")
 root.configure(bg="teal")
 
+#Translating the computer's choice to Rock, Paper or Scissors
 random_number = r.randint(1, 3)
 if random_number == 1:
     computer_choice = "R"
@@ -15,6 +16,7 @@ elif random_number == 3:
     computer_choice = "S"
 
 # ASCII ART
+#Rock
 rock_image = """
     _______
 ---'   ____)
@@ -23,6 +25,7 @@ rock_image = """
       (____)
 ---.__(___)"""
 
+#Paper
 paper_image = """
      _______
 ---'    ____)____
@@ -31,6 +34,7 @@ paper_image = """
          _______)
 ---.__________)"""
 
+#Scissors
 scissors_image = """
     _______
 ---'   ____)____
