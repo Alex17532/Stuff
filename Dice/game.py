@@ -4,6 +4,7 @@ import random
 root = tkinter.Tk()
 root.geometry('600x600')
 root.title('Roll a dice')
+root.configure(bg="midnight blue")
 
 label = tkinter.Label(root, text='', font=('Helvetica', 260))
 
