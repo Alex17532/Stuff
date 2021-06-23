@@ -13,6 +13,12 @@ def roll_dice():
     label.configure(text=f'{random.choice(dice)} {random.choice(dice)}')
     label.pack()
 
+def reset():
+    dice = []
+    label.configure(text=f'{random.choice(dice)} {random.choice(dice)}')
+    label.pack()
+
 button = tkinter.Button(root, text='Roll', foreground='blue', command=roll_dice)
 button.pack()
+buttonreset = tkinter.Button(root, text = "Reset", command = reset)
 root.mainloop()
