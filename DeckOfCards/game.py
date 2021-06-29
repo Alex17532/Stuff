@@ -6,6 +6,7 @@ wn = turtle.Screen()
 wn.bgcolor("black")
 wn.setup(800, 600)
 wn.title("Deck of Cards")
+wn.bgcolor("black")
 
 pen = turtle.Turtle()
 pen.speed(0)
