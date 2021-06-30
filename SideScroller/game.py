@@ -223,6 +223,7 @@ wn.onkeypress(fire_missile, "space")
 
 running = True
 while running:
+    player.setheading(random.randint(0, 360))
     wn.update()
     pen.clear()
 
