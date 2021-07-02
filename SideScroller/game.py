@@ -269,7 +269,7 @@ while running:
             enemy.goto(random.randint(400, 480), random.randint(-280, 280))
 
             if player.health <= 0:
-                print("yuo dead game over")
+                print("yuo ded gaem oevr")
                 exit()
 
     pen.draw_score()
