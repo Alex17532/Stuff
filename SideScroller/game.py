@@ -7,6 +7,7 @@ wn = turtle.Screen()
 wn.setup(800, 600)
 wn.bgcolor("black")
 wn.title("Side-scrolling Shooter")
+wn.bgpic("/Users/alexanderlongfellow/Desktop/Backgrounds/11.jpeg")
 wn.tracer(0)
 
 class Pen(turtle.Turtle):
