@@ -223,7 +223,6 @@ wn.onkeypress(fire_missile, "space")
 
 running = True
 while running:
-    player.setheading(random.randint(0, 360))
     wn.update()
     pen.clear()
 
@@ -269,7 +268,7 @@ while running:
             enemy.goto(random.randint(400, 480), random.randint(-280, 280))
 
             if player.health <= 0:
-                print("yuo ded gaem oevr")
+                print("yuo dead game over")
                 exit()
 
     pen.draw_score()
