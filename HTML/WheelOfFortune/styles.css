@@ -1,3 +1,19 @@
+* {
+  cursor: crosshair;
+}
+
+#header {
+  text-align: center;
+  font-family: sans-serif;
+  color: darkorchid;
+}
+
+#gl {
+  text-align: center;
+  font-family: cursive;
+  
+}
+
 #app {
     width: 400px;
     height: 400px;
