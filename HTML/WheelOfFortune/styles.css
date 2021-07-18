@@ -2,6 +2,13 @@
   cursor: crosshair;
 }
 
+.points {
+  text-align: right;
+  position: abs;
+  display: block;
+  font-size: medium;
+}
+
 #header {
   text-align: center;
   font-family: sans-serif;
@@ -11,7 +18,6 @@
 #gl {
   text-align: center;
   font-family: cursive;
-  
 }
 
 #app {
