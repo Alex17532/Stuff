@@ -1,10 +1,6 @@
 import numpy
 import turtle, random
 running = True
-wn_name = ["Drawing Game"]
-colours = ["green", "blue", "magenta", "violet"]
-colours2 = ["red", "orange", "yellow"]
-shapes = ["square", "arrow", "circle", "turtle", "triangle", "classic"]
 class Main():
     def __init__(self):
         wn = turtle.Screen()
@@ -16,12 +12,7 @@ class Main():
         self.y = 300
         self.t.speed(0)
         wn.bgcolor("black")
-        def change_background():
-            wn.listen()
-            wn.bgcolor(random.choice(colours))
-        change_background()
         wn.title(random.choice(wn_name))
-        wn.onkeypress(change_background, "c")
         screen.bind('<Motion>', self.set_coords)
         self.run()
     def set_coords(self, event):
@@ -30,16 +21,8 @@ class Main():
         self.y = event.y
     def run(self):
         while True:
-            self.t.left(540540540540540)
-            self.t.circle(10)
-            self.t.home()
-            self.t.forward(190)
-            self.t.shape(random.choice(shapes))
             def func(event):
                 print(event.x, event.y)
                 pen.goto(event.x, event.y)
-            self.t.pensize(5)
-            self.t.shape("triangle")
-            self.t.color(random.choice(colours2))
             self.t.setposition(self.x-300, (self.y*-1)+300)
 m = Main()
