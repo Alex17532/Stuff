@@ -2,6 +2,7 @@
     box-sizing: border-box;
     font-family: Gotham Rounded, sans-serif;
     font-weight: normal;
+    cursor: crosshair;
   }
   
   body {
