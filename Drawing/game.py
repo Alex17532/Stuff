@@ -1,5 +1,5 @@
 import numpy, turtle, random
-colours = ["yellow", "light green", "light blue"]
+colours = ["red", "orange", "yellow", "green", "blue", "violet", "purple"]
 seq=["0", "O"]
 running = True
 class Main():
