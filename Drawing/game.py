@@ -13,9 +13,9 @@ class Main():
         self.y = 300
         self.t.pu()
         self.t.speed(0)
-        self.t.color("green")
+        self.t.color("white")
         self.t.shape("circle")
-        self.t.pensize(5)
+        self.t.pensize(100)
         wn.bgcolor("black")
         screen.bind('<Motion>', self.set_coords)
         screen.bind('Space', self.t.pd())
@@ -26,7 +26,6 @@ class Main():
         self.y = event.y
     def run(self):
         while True:
-            self.t.circle(5)
             self.t.seth(random.randint(0, 360))
             self.t.color(random.choice(colours))
             def func(event):

@@ -1,7 +1,7 @@
-import turtle
-import random
+import turtle, random
 
 titles = ["Box", "bOx"]
+colours = ["red", "orange", "yellow", "green", "blue", "violet", "purple"]
 
 #Window
 wn = turtle.Screen()
@@ -17,19 +17,19 @@ player.speed(0)
 
 #Functions
 def move_u():
-    y = player.ycor() + 10
+    y = player.ycor() + 50
     player.sety(y)
 
 def move_d():
-    y = player.ycor() - 10
+    y = player.ycor() - 50
     player.sety(y)
 
 def move_l():
-    x = player.xcor() - 10
+    x = player.xcor() - 50
     player.setx(x)
 
 def move_r():
-    x = player.xcor() + 10
+    x = player.xcor() + 50
     player.setx(x)
 
 #Keybinds
@@ -41,6 +41,7 @@ wn.onkeypress(move_r, "Right")
 
 #Main game loop
 while True:
+    player.color(random.choice(colours))
     player.seth(random.randint(0, 360))
     wn.title(random.choice(titles))
     wn.update()

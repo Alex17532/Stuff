@@ -7,7 +7,7 @@ wn = turtle.Screen()
 wn.setup(800, 600)
 wn.bgcolor("black")
 wn.title("Side-scrolling Shooter")
-wn.bgpic("/Users/alexanderlongfellow/Desktop/Sidescroller-bg.gif")
+wn.bgpic("/Users/alexanderlongfellow/Desktop/Sidescroller-bg-INVERTED.gif")
 wn.tracer(0)
 
 class Pen(turtle.Turtle):
@@ -97,7 +97,9 @@ class Player(turtle.Turtle):
         elif self.xcor() > -180:
             self.setx(-180)
             self.dx = 0
-
+        
+        def change_colour():
+            self.color(random.choice(colours))
 
 class Missile(turtle.Turtle):
     def __init__(self):
@@ -221,6 +223,8 @@ wn.onkeypress(player.down, "Down")
 wn.onkeypress(player.move_left, "Left")
 wn.onkeypress(player.move_right, "Right")
 wn.onkeypress(fire_missile, "space")
+wn.onkeypress(player.change_colour, "s")
+wn.onkeypress(player.change_colour, "S")
 
 running = True
 while running:
