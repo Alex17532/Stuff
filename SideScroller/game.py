@@ -1,23 +1,3 @@
-#            .-/+oossssoo+/-.               alexanderlongfellow@ubuntu 
-#         `:+ssssssssssssssssss+:`           -------------------------- 
-#       -+ssssssssssssssssssyyssss+-         OS: Ubuntu 20.04.2 LTS x86_64 
-#     .ossssssssssssssssssdMMMNysssso.       Host: VMware Virtual Platform None 
-#    /ssssssssssshdmmNNmmyNMMMMhssssss/      Kernel: 5.8.0-63-generic 
-#   +ssssssssshmydMMMMMMMNddddyssssssss+     Uptime: 1 min 
-#  /sssssssshNMMMyhhyyyyhmNMMMNhssssssss/    Packages: 1603 (dpkg), 6 (snap) 
-# .ssssssssdMMMNhsssssssssshNMMMdssssssss.   Shell: bash 5.0.17 
-# +sssshhhyNMMNyssssssssssssyNMMMysssssss+   Resolution: 1280x800 
-# ossyNMMMNyMMhsssssssssssssshmmmhssssssso   DE: GNOME 
-# ossyNMMMNyMMhsssssssssssssshmmmhssssssso   WM: Mutter 
-# +sssshhhyNMMNyssssssssssssyNMMMysssssss+   WM Theme: Adwaita 
-# .ssssssssdMMMNhsssssssssshNMMMdssssssss.   Theme: Yaru-dark [GTK2/3] 
-#  /sssssssshNMMMyhhyyyyhdNMMMNhssssssss/    Icons: Yaru [GTK2/3] 
-#   +sssssssssdmydMMMMMMMMddddyssssssss+     Terminal: gnome-terminal 
-#    /ssssssssssshdmNNNNmyNMMMMhssssss/      CPU: Intel i5-5257U (2) @ 2.700GHz 
-#     .ossssssssssssssssssdMMMNysssso.       GPU: 00:0f.0 VMware SVGA II Adapter 
-#       -+sssssssssssssssssyyyssss+-         Memory: 1293MiB / 3906MiB 
-#         `:+ssssssssssssssssss+:`
-#             .-/+oossssoo+/-. 
 import turtle
 import random
 colours = ["red", "orange", "yellow", "light green", "blue", "violet", "magenta"]

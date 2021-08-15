@@ -41,6 +41,7 @@ wn.onkeypress(move_r, "Right")
 
 #Main game loop
 while True:
+    player.circle(5)
     player.color(random.choice(colours))
     player.seth(random.randint(0, 360))
     wn.title(random.choice(titles))
