@@ -4,9 +4,9 @@ from pynput.mouse import Button, Controller
 from pynput.keyboard import Listener, KeyCode
 
 
-delay = 0.001
+delay = 0.01
 button = Button.left
-start_stop_key = KeyCode(char='s')
+start_stop_key = KeyCode(char='g')
 exit_key = KeyCode(char='e')
 
 
