@@ -8,10 +8,10 @@ brick_texture = load_texture('assets/brick_block.png')
 dirt_texture  = load_texture('assets/dirt_block.png')
 sky_texture   = load_texture('assets/skybox.png')
 arm_texture   = load_texture('assets/arm_texture.png')
-punch_sound   = Audio('assets/punch_sound',loop = False, autoplay = False)
+punch_sound   = Audio('assets/punch_sound.mp3',loop = False, autoplay = False)
 block_pick = 1
 
-window.fps_counter.enabled = False
+window.fps_counter.enabled = Falce
 window.exit_button.visible = False
 
 def update():
