@@ -13,7 +13,7 @@ portal_texture = load_texture('assets/portal_texture.png')
 punch_sound   = Audio('assets/punch_sound.mp3',loop = False, autoplay = False)
 block_pick = 1
 
-window.fps_counter.enabled = False
+
 window.exit_button.visible = False
 
 def update():
