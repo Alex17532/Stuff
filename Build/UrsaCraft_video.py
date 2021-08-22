@@ -81,7 +81,7 @@ class Hand(Entity):
 
 	def passive(self):
 		self.position = Vec2(0.4,-0.6)
-
+#20 60fps
 for z in range(20):
 	for x in range(20):
 		voxel = Voxel(position = (x,0,z))
