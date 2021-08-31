@@ -1,4 +1,3 @@
-# |\\Falling Skies\\|
 import turtle
 import random
 import time as t
