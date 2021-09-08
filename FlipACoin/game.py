@@ -8,7 +8,7 @@ coin_face = random.choice(faces)
 y_n = input("Do you wan't to flip a coin? (y/n) > ").upper()
 
 if y_n == "Y":
-    print("You flip a coin... \n")
+    print("You flipped a coin... \n")
     print(f"It landed a {coin_face}!")
 
 if y_n == "N":
