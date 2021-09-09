@@ -12,7 +12,7 @@ if run == "y".upper():
 
 # Initialize 
 
-words = ["SYNTAX", "PYTHON", "HTML", "JAVASCRIPT", "PROGRAM", "ERROR"]
+words = ["PARK", "TREE", "GRASS", "DOG", "LEAVES", "DIRT"]
 
 word = random.choice(words)
 guess = "-" * len(word)
