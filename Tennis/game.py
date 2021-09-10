@@ -3,6 +3,7 @@ import turtle, random, os
 wn = turtle.Screen()
 wn.bgcolor("black")
 wn.title("Tennis (sort of sort of not)")
+wn.bgpic("/Users/alexanderlongfellow/Desktop/code/Tennis/court.gif")
 wn.setup(800, 600)
 wn.tracer(0)
 
@@ -13,24 +14,24 @@ score_b = 0
 
 paddle_a = turtle.Turtle()
 paddle_a.speed(0)
-paddle_a.shape(player)
-paddle_a.color("white")
+paddle_a.shape("square")
+paddle_a.color("blue")
 paddle_a.pu()
 paddle_a.goto(-350, 0)
-paddle_a.shapesize(stretch_wid=5, stretch_len=1)
+paddle_a.shapesize(stretch_wid=2, stretch_len=1)
 
 paddle_b = turtle.Turtle()
 paddle_b.speed(0)
 paddle_b.shape("square")
-paddle_b.color("white")
+paddle_b.color("yellow")
 paddle_b.pu()
 paddle_b.goto(350, 0)
-paddle_b.shapesize(stretch_wid=5, stretch_len=1)
+paddle_b.shapesize(stretch_wid=2, stretch_len=1)
 
 ball = turtle.Turtle()
 ball.speed(0)
 ball.shape("circle")
-ball.color("white")
+ball.color("light green")
 ball.pu()
 ball.goto(0, 0)
 ball.dx = 1
