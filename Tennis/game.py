@@ -94,7 +94,6 @@ while True:
         score_a += 1
         pen.clear()
         pen.write(f"Player A: {score_a}      Player B: {score_b}", align="center", font=("Courier", 24, "normal"))
-        os.system("afplay /Users/alexanderlongfellow/Desktop/code/Tennis/clap.wav&")
 
 
     if ball.xcor() < -390:
@@ -103,16 +102,17 @@ while True:
         score_b += 1
         pen.clear()
         pen.write(f"Player A: {score_a}      Player B: {score_b}", align="center", font=("Courier", 24, "normal"))
-        os.system("afplay /Users/alexanderlongfellow/Desktop/code/Tennis/clap.wav&")
 
 
     if ball.xcor() > 340 and ball.xcor() < 350 and (ball.ycor() < player_b.ycor() + 40 and ball.ycor() > player_b.ycor() - 40):
+        os.system("afplay /Users/alexanderlongfellow/Desktop/code/Tennis/clap.wav&")
         ball.setx(340)
-        ball.dx *= -1
+        ball.dx *= -1.1
 
     if ball.xcor() < -340 and ball.xcor() > -350 and (ball.ycor() < player_a.ycor() + 40 and ball.ycor() > player_a.ycor() - 40):
+        os.system("afplay /Users/alexanderlongfellow/Desktop/code/Tennis/clap.wav&")
         ball.setx(-340)
-        ball.dx *= -1
+        ball.dx *= -1.1
 
     # AI
     # if player_b.ycor() < ball.ycor() and abs(player_b.ycor() - ball.ycor()) > 10:
