@@ -4,7 +4,7 @@ import pickle
 
 root = tkinter.Tk()
 root.title("Login to to-do list")
-root.configure(bg="light grey")
+root.configure(bg="black")
 username = input("Enter your username. > ")
 password = input("Enter the password. > ")
 if username != "Alex":
