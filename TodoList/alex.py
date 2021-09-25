@@ -3,7 +3,7 @@ import tkinter.messagebox
 import pickle
 
 root = tkinter.Tk()
-root.title("Login to to-do list")
+root.title(" ")
 root.configure(bg="black")
 username = input("Enter your username. > ")
 password = input("Enter the password. > ")
