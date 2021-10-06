@@ -168,11 +168,8 @@ class Enemy(Entity):
         self.position = Vector2()
         self.position.x = random.randrange(0, 720)
         self.position.y = 0
-
         self.initialiser((102, 107, 102),"Data/Sounds/RockHit.wav")
-
         self.tag = "enemy"
-
         self.radius = random.randrange(10, 30)
 
 class Snowball(Entity):
@@ -183,7 +180,6 @@ class Snowball(Entity):
         self.position.y = 0
         self.initialiser((255, 255, 255),"Data/Sounds/SnowballHit.wav")
         self.tag = "snowball"
-
         self.radius = random.randrange(10, 30)
 
 class Spawner():
