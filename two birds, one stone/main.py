@@ -106,9 +106,9 @@ def main():
                 pygame.sys.exit()
 
         display.fill((255, 255, 255))
-        display.blit(backgroundTex, (0,0))
-        display.blit(polesTex, (0,0))
-        display.blit(grassTex, (0,0))
+        display.blit(backgroundTex, (0, 0))
+        display.blit(polesTex, (0, 0))
+        display.blit(grassTex, (0, 0))
         display.blit(logoTex, (display.get_width()/2 - logoTex.get_width()/2, display.get_height()/2 - logoTex.get_height()/2 + math.sin(time.time()*5)*5 - 25)) 
         startMessage = font_32.render("SPACE TO START", True, (0, 0, 0))
         display.blit(startMessage, (display.get_width()/2 - startMessage.get_width()/2, 325))
@@ -233,7 +233,8 @@ def main():
 
         if currentLevel > 9:
             display.blit(winOverlayTex, (0, 0))
-            winText = font_48.render('GOVERNMENT DESTROYED.', True, (255, 255, 255))
+            winText = font_48.render('rock, paper, bird?', True, (255, 255, 255))
+            
             display.blit(winText, (320 - winText.get_width()/2, 240 - winText.get_height() - 20))
             shotsText = font_32.render('SHOTS: ' + str(shots), True, (255, 255, 255))
             display.blit(shotsText, (320 - shotsText.get_width()/2, 240 - shotsText.get_height() + 20))
