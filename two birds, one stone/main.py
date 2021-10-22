@@ -46,6 +46,11 @@ def main():
     shotsTextBorder = pygame.image.load('data/gfx/shots_border.png')
     logoTex = pygame.image.load('data/gfx/logo.png')
     winOverlayTex = pygame.image.load('data/gfx/win_overlay.png')
+
+    #bird image particles
+    particle_right = pygame.image.load('data/gfx/mbird_right_sliced.png')
+    particle_left = pygame.image.load('data/gfx/mbird_left_sliced.png')
+    feathers = pygame.image.load('data/gfx/feathers.png')
     # get fonts
     font = pygame.font.Font('data/font/font.otf', 100)
     font_32 = pygame.font.Font('data/font/font.otf', 32)
@@ -73,7 +78,7 @@ def main():
         def __init__(self, x, y):
             self.x = x
             self.y = y
-            self.x_vel = random.randrange(3, -3)*5
+            self.x_vel = random.randrange(-3, 3)*5
             self.y_vel = random.randrange(-10, -1)*5
             self.lifetime = 0
 
@@ -82,7 +87,7 @@ def main():
             if self.lifetime < 20:
                 self.x += self.x_vel
                 self.y += self.y_vel
-                pygame.draw.circle(window, (255, 255, 255), (self.x, self.y), 10)
+                pygame.draw.circle(display, (0, 0, 0), (self.x, self.y), 10)
 
     particles = []
                 
@@ -99,7 +104,7 @@ def main():
 
         display.fill((255, 255, 255))
         display.blit(backgroundTex, (0,0))
-        startMessage = font_32.render("CREATED BY ME. YES, ME", True, (48, 93, 120))
+        startMessage = font_32.render("CREATED BY ME.", True, (48, 93, 120))
         display.blit(startMessage, (display.get_width()/2 - startMessage.get_width()/2, display.get_height()/2 - startMessage.get_height()/2))
             
         # update display
@@ -140,8 +145,7 @@ def main():
         pygame.time.delay(10)
 
     while running:
-        for particle_ in Particle():
-            particle_.draw(display)
+
         # calculate deltatime
 
         dt = clock.tick(60) / 1000
@@ -179,10 +183,14 @@ def main():
             bird.update(dt)
             for projectile in projectiles:
                 if checkCollisions(bird.position.x, bird.position.y, bird.width, bird.height, projectile.position.x, projectile.position.y, projectile.width, projectile.height):
+                    display.blit(feathers, (bird.position.x, bird.position.y))
+                    pygame.time.delay(2)
                     birds.remove(bird)
-                    for x in range(20):
-                        particles.append(particle(300, 300))
+                    
                     pygame.mixer.Sound.play(killfx)
+
+        for particle_ in particles:
+            particle_.draw(display)
 
         if (currentLevel is 7) and len(birds) is 0:
             pygame.mixer.Sound.play(winfx)
