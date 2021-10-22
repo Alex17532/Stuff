@@ -1,6 +1,7 @@
 import pygame
 import math
 import time
+import random
 from game.projectile import Projectile
 from game.shooter import Shooter
 from game.bird import Bird
@@ -21,6 +22,9 @@ def main():
     pygame.init()
     background = (255,255,255)
     (width, height) = (640, 480)
+
+    X = 600
+    Y = 600
 
     display = pygame.display.set_mode((width, height))
     pygame.display.set_caption("two birds, one stone")
@@ -64,6 +68,25 @@ def main():
 
     splashScreenTimer = 0
     pygame.mixer.Sound.play(winfx)
+
+    class Particle():
+        def __init__(self, x, y):
+            self.x = x
+            self.y = y
+            self.x_vel = random.randrange(3, -3)*5
+            self.y_vel = random.randrange(-10, -1)*5
+            self.lifetime = 0
+
+        def draw(self, window):
+            self.lifetime += 1
+            if self.lifetime < 20:
+                self.x += self.x_vel
+                self.y += self.y_vel
+                pygame.draw.circle(window, (255, 255, 255), (self.x, self.y), 10)
+
+    particles = []
+                
+
     while splashScreenTimer < 2:
         dt = clock.tick(60) / 1000
         splashScreenTimer += dt
@@ -76,7 +99,7 @@ def main():
 
         display.fill((255, 255, 255))
         display.blit(backgroundTex, (0,0))
-        startMessage = font_32.render("CREATED BY ME", True, (48, 93, 120))
+        startMessage = font_32.render("CREATED BY ME. YES, ME", True, (48, 93, 120))
         display.blit(startMessage, (display.get_width()/2 - startMessage.get_width()/2, display.get_height()/2 - startMessage.get_height()/2))
             
         # update display
@@ -156,6 +179,8 @@ def main():
             for projectile in projectiles:
                 if checkCollisions(bird.position.x, bird.position.y, bird.width, bird.height, projectile.position.x, projectile.position.y, projectile.width, projectile.height):
                     birds.remove(bird)
+                    for x in range(20):
+                        particles.append(particle(300, 300))
                     pygame.mixer.Sound.play(killfx)
 
         if (currentLevel is 7) and len(birds) is 0:
@@ -219,6 +244,9 @@ def main():
         if shooter.hasBullet:
             display.blit(projectileTex, (shooter.position.x + shooter.width/2 - 29/2, shooter.position.y - 6)) 
         display.blit(shooterTex, (shooter.position.x, shooter.position.y))
+
+        for particle_ in Particle():
+            particle_.draw(display)
 
         if not (currentLevel > 9):
 
