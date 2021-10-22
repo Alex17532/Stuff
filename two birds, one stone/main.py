@@ -140,7 +140,8 @@ def main():
         pygame.time.delay(10)
 
     while running:
-
+        for particle_ in Particle():
+            particle_.draw(display)
         # calculate deltatime
 
         dt = clock.tick(60) / 1000
@@ -244,9 +245,6 @@ def main():
         if shooter.hasBullet:
             display.blit(projectileTex, (shooter.position.x + shooter.width/2 - 29/2, shooter.position.y - 6)) 
         display.blit(shooterTex, (shooter.position.x, shooter.position.y))
-
-        for particle_ in Particle():
-            particle_.draw(display)
 
         if not (currentLevel > 9):
 
