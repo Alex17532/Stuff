@@ -188,6 +188,7 @@ def main():
                     birds.remove(bird)
                     
                     pygame.mixer.Sound.play(killfx)
+        
 
         for particle_ in particles:
             particle_.draw(display)
