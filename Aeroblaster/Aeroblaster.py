@@ -704,7 +704,7 @@ while True:
     text.show_text('level ' + str(level), 3, 12, 1, 9999, font, screen, 3)
     screen.blit(pygame.transform.scale(core_img, (33, 36)), (9, 61))
     text.show_text(str(total_cores - cores_left) + '/' + str(total_cores), 16, 23, 1, 9999, font, screen, 3)
-    #text.show_text(str(current_fps) + 'fps', 3, 35, 1, 9999, font, screen, 3)
+    text.show_text(str(current_fps) + 'fps', 3, 35, 1, 9999, font, screen, 3)
     # Update ------------------------------------------------- #
     pygame.display.update()
     current_fps = int(fps.get_framerate())
