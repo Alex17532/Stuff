@@ -1,9 +1,8 @@
 import turtle, random
-cl = ["black", "black"]
 
 wn = turtle.Screen()
 wn.bgcolor("black")
-wn.title("Moving")
+wn.title("A thing that bounces and moves")
 wn.setup(800, 600)
 wn.tracer(0)
 
@@ -48,8 +47,6 @@ while True:
     wn.update()
     player.setx(player.xcor() + playerspeed)
     player.sety(player.ycor() + playerupspeed)
-
-    wn.bgcolor(random.choice(cl))
 
     if player.ycor() > 290:
         playerupspeed = -1.8
