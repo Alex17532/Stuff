@@ -1,1 +1,0 @@
-/Users/alexanderlongfellow/Desktop/code/Aeroblaster/data/clip.py
