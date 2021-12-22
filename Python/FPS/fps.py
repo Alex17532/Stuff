@@ -4,8 +4,6 @@ from ursina.prefabs.first_person_controller import FirstPersonController
 
 def input(key):
 	if key=="left mouse down":
-		Audio("assets/laser_sound.wav")
-		Animation("assets/spark", parent=camera.ui, fps=5, scale=.1, position=(.19, -.03), loop=False)
 
 		for wasp in wasps:
 			if wasp.hovered:
