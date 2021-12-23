@@ -41,11 +41,11 @@ def NewPumpkin():
     invoke(NewPumpkin,delay = random.uniform(1,3))
             
 def crash():
-    Text(text='Crashed! Reload the game!',origin=(0,0), scale=3,
+    Text(text='Crashed! Restart the game!',origin=(0,0), scale=3,
          color=color.yellow,background=True)
 
 app=Ursina()
-window.color = color.orange
+window.color = color.black
 run = True
 offset = 0
 
