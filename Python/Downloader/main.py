@@ -10,7 +10,7 @@ from pytube import YouTube
 class homeScreen(QDialog):
     def __init__(self):
         super(homeScreen, self).__init__()
-        loadUi("/Users/alexanderlongfellow/Desktop/Downloader/main.ui", self)
+        loadUi("/Users/alexanderlongfellow/Desktop/Code/Python/Downloader/main.ui", self)
 
         self.download_btn.clicked.connect(self.download)
         
@@ -18,7 +18,7 @@ class homeScreen(QDialog):
     def download(self):
         link = self.link.text()
         video = YouTube(link)
-        stream = video.streams.get_by_itag(22)
+        stream = video.streams.get_by_itag(21)
         stream.download()
         self.console.setText("Success!")
         self.link.setText("")
