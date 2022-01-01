@@ -1,8 +1,8 @@
-
+#Imports
 import pygame
 import sys
 import random
-from math import *
+from math import * 
 
 pygame.init()
 
@@ -57,7 +57,8 @@ class Balloon:
 
         if direct == -1:
             self.angle += -10
-        elif direct == 0:
+        elif direct == 0: 
+
             self.angle += 0
         else:
             self.angle += 10
@@ -120,7 +121,7 @@ def pointer():
     color = lightGreen
     for i in range(noBalloon):
         if onBalloon(balloons[i].x, balloons[i].y, balloons[i].a, balloons[i].b, pos):
-            color = green
+            pass
     pygame.draw.ellipse(display, color, (pos[0] - r/2, pos[1] - r/2, r, r), 4)
     pygame.draw.line(display, color, (pos[0], pos[1] - l/2), (pos[0], pos[1] - l), 4)
     pygame.draw.line(display, color, (pos[0] + l/2, pos[1]), (pos[0] + l, pos[1]), 4)
