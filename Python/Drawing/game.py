@@ -2,8 +2,6 @@ import numpy, turtle, random
 
 colours = ["green"]
 
-seq=["0", "O"]
-
 running = True
 
 class Main():

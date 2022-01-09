@@ -3,18 +3,18 @@ import turtle, random, os
 wn = turtle.Screen()
 wn.bgcolor("black")
 wn.title("Tennis (sort of sort of not)")
-wn.bgpic("/Users/alexanderlongfellow/Desktop/code/Tennis/court.gif")
+wn.bgpic("/Users/alexanderlongfellow/Desktop/code/Python/Tennis/court.gif")
 wn.setup(800, 600)
 wn.tracer(0)
-wn.register_shape('/Users/alexanderlongfellow/Desktop/code/Tennis/racket.gif')
-wn.register_shape('/Users/alexanderlongfellow/Desktop/code/Tennis/racket2.gif')
+wn.register_shape('/Users/alexanderlongfellow/Desktop/code/Python/Tennis/racket.gif')
+wn.register_shape('/Users/alexanderlongfellow/Desktop/code/Python/Tennis/racket2.gif')
 
 score_a = 0
 score_b = 0
 
 player_a = turtle.Turtle()
 player_a.speed(0)
-player_a.shape("/Users/alexanderlongfellow/Desktop/code/Tennis/racket.gif")
+player_a.shape("/Users/alexanderlongfellow/Desktop/code/Python/Tennis/racket.gif")
 player_a.color("blue")
 player_a.pu()
 player_a.goto(-350, 0)
@@ -22,7 +22,7 @@ player_a.shapesize(stretch_wid=2, stretch_len=1)
 
 player_b = turtle.Turtle()
 player_b.speed(0)
-player_b.shape("/Users/alexanderlongfellow/Desktop/code/Tennis/racket2.gif")
+player_b.shape("/Users/alexanderlongfellow/Desktop/code/Python/Tennis/racket2.gif")
 player_b.color("purple")
 player_b.pu()
 player_b.goto(350, 0)
@@ -105,12 +105,12 @@ while True:
 
 
     if ball.xcor() > 340 and ball.xcor() < 350 and (ball.ycor() < player_b.ycor() + 40 and ball.ycor() > player_b.ycor() - 40):
-        os.system("afplay /Users/alexanderlongfellow/Desktop/code/Tennis/clap.wav&")
+        os.system("afplay /Users/alexanderlongfellow/Desktop/code/Python/Tennis/clap.wav&")
         ball.setx(340)
         ball.dx *= -1.1
 
     if ball.xcor() < -340 and ball.xcor() > -350 and (ball.ycor() < player_a.ycor() + 40 and ball.ycor() > player_a.ycor() - 40):
-        os.system("afplay /Users/alexanderlongfellow/Desktop/code/Tennis/clap.wav&")
+        os.system("afplay /Users/alexanderlongfellow/Desktop/code/Python/Tennis/clap.wav&")
         ball.setx(-340)
         ball.dx *= -1.1
 
