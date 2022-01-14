@@ -1,5 +1,7 @@
 * {
   cursor: cell;
+  background-color: black;
+  text-decoration: wavy;
 }
 
 .points {
@@ -12,12 +14,11 @@
 #header {
   text-align: center;
   font-family: sans-serif;
-  color: darkorchid;
+  color: hotpink;
 }
 
 #gl {
   text-align: center;
-  font-family: cursive;
 }
 
 #app {
@@ -26,6 +27,18 @@
     margin: 0 auto;
     position: relative;
   }
+
+body {
+  color: red;
+  font-size: xx-small;
+  text-align: center;
+  scroll-behavior: auto;
+}
+
+img {
+  border-image-slice: initial;
+  image-resolution: 1;
+}
   
   .marker {
     position: absolute;
@@ -44,11 +57,12 @@
     display: block;
     width: 250px;
     margin: 40px auto;
-    cursor: pointer;
+    cursor: cell;
   }
   
   .button:hover {
     opacity: 0.8;
+    size: 9vmax;
   }
   
   .blur {
