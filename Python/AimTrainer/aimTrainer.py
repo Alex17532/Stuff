@@ -19,6 +19,7 @@ FONT = pygame.font.SysFont(None, 48)
 def terminate():
     pygame.quit()
     sys.exit()
+    
 
 def Menu():
     timer = 0
@@ -49,7 +50,7 @@ def Menu():
         drawText("Easy", windowSurface, 83, 485, FONT , BLACK)
         drawText("Medium", windowSurface, 312, 485,FONT , BLACK)
         drawText("Hard", windowSurface, 580, 485,FONT , BLACK)
-        mainClock.tick(50)
+        mainClock.tick(120)
         timer += 1
         if timer % 100 == 0:
             color = BLUE
@@ -221,13 +222,11 @@ def game(difficulty):
                             score += 0
                             hitShots += 0
                         
-                                           
         pygame.draw.circle(windowSurface, (149, 53, 83), (mouseX,mouseY),
                            CIRCLERADIUS,0)
         for enemy in enemies:
             windowSurface.blit(targetImage, enemy)
-        pygame.draw.circle(windowSurface, WHITE, (mouseX,mouseY),
-                           CIRCLERADIUS + 1, 3)
+        
         pygame.draw.line(windowSurface, WHITE, (mouseX, mouseY + 15),
                         (mouseX, mouseY - 15), 2)
         pygame.draw.line(windowSurface, WHITE, (mouseX + 15, mouseY),

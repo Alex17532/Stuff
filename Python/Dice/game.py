@@ -4,7 +4,8 @@ import random
 root = tkinter.Tk()
 root.geometry('600x600')
 root.title('Roll a dice')
-root.configure(bg="midnight blue")
+root.configure(bg="white")
+#aoaoaoao flashlight
 
 label = tkinter.Label(root, text='', font=('Helvetica', 260))
 
@@ -13,12 +14,6 @@ def roll_dice():
     label.configure(text=f'{random.choice(dice)} {random.choice(dice)}')
     label.pack()
 
-def reset():
-    label.configure(text=f'')
-    label.pack()
-
-button = tkinter.Button(root, text='Roll', foreground='blue', command=roll_dice)
+button = tkinter.Button(root, text='Roll', foreground='blue', command=roll_dice, width=20, height=10, compound="c")
 button.pack()
-buttonreset = tkinter.Button(root, text = "Reset", command = reset)
-buttonreset.pack()
 root.mainloop()
