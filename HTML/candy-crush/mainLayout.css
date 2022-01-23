@@ -13,6 +13,7 @@ img {
 	margin: 5px;
 	border: 1px solid #666666;
 	box-shadow: 1px 1px 5px gray;
+	box-sizing: border-box;
 }
 
 .btn:hover {
@@ -43,7 +44,7 @@ img {
 
 #gameTitle {
 	font-weight: bold;
-	color: red;
+	color: black;
 }
 
 #gameBoard {

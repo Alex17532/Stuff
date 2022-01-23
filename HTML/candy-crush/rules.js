@@ -1,31 +1,8 @@
-/* Copyright (c) 2017 MIT 6.813/6.831 course staff, all rights reserved.
- * Redistribution of original or derived work requires permission of course staff.
- */
 
- /*
- *
- * This class implements the rules of Candy Crush.
- *
- */
 var Rules = function(board)
 {
   // Set during setup, to avoid scoring.
   var scoring = false;
-
-  ////////////////////////////////////////////////
-  // PUBLIC METHODS
-  // 
-  // You will likely call these methods in index.html
-  //
-
-  /*
-  *
-  * Prepares a new game with no groups of three adjacent same-color candies.
-  * Any time there is a group of adjacent same-color candies, re-rolls them.
-  * Sets the score to zero such that the player does not get points for 
-  * crushes that occure by luck initially.
-  *
-  */
   this.prepareNewGame = function()
   {
 
@@ -37,7 +14,7 @@ var Rules = function(board)
       if (crushable.length == 0) break;
       this.removeCrushes(crushable);
     }
-    scoring = true;
+    scoring=true
   }
 
 
